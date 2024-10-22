@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Sixtyfour+Convergence&display=swap');
+
+nav{
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wishlist:hover{
+  border-radius: 20%;
+  transform: scale(1.13);
+  transition-duration: 1s;
+}
+
+.navb a:hover{
+  /* border-bottom: 3px solid ;
+  padding-bottom: 3px;
+  border-color:  red ; */
+  transition: .5s;
+
+}
+
+.navb .nav-link {
+  margin-right: 15px;
+  margin-left: 5px;
+}
+

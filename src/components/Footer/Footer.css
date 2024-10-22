@@ -1,0 +1,12 @@
+footer{
+  /* top: 500px; */
+  /* position: relative; */
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 18px;
+}
+
+
+.socials{
+ place-content: center;
+}
+

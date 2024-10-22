@@ -1,0 +1,28 @@
+
+.mweek{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 18px;
+}
+
+/* .poster{
+  height: 500px;
+  width:400px
+} */
+
+.card-1{
+  background: linear-gradient(to bottom, #605351e1, #d2d5a2 ,#E6EFC2);
+}
+
+.info .links a{
+  text-decoration: none !important;
+  font-style: italic;
+  color: grey !important
+}
+
+.trailer a{
+  text-decoration: none;
+  color: white;
+}

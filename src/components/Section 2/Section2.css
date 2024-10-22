@@ -1,0 +1,15 @@
+*{
+  font-family: "Afacad Flux", sans-serif;
+}
+
+.ott{
+  height: 100%;
+  /* backdrop-filter: blur(2px); */
+}
+
+
+.platform a{
+  text-decoration: none;
+  color:beige;
+
+}
