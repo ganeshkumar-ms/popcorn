@@ -29,7 +29,7 @@ Popcorn is committed to delivering exceptional results that exceed expectations.
 Get in Touch For hiring inquiries or freelance opportunities, please contact:
 <br /><br />
 <div className='d-flex gap-4'>
-<Link to="www.linkedin.com/in/ganeshkumar-m-128a19259" target='_blank'><FaLinkedinIn size={"30px"}/></Link>
+<Link to="https://www.linkedin.com/in/ganeshkumar-m-128a19259" target='_blank'><FaLinkedinIn size={"30px"}/></Link>
 <Link to="https://wa.me/9940999860" target='_blank'><IoLogoWhatsapp size={"30px"}/></Link>
 <Link to="mailto:ganesh71730@gmail.com" target='_blank'><IoIosMail size={"30px"}/></Link>
 
