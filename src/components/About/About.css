@@ -3,3 +3,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media(max-width:550px){
+  .abt{
+    position: absolute;
+  }
+}

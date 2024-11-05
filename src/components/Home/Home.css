@@ -2,5 +2,31 @@
   background: url(../Images/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px !important;
 
 }
+ 
+
+.home form{
+/* margin-top: 20px; */
+padding: 38px;
+}
+
+
+  @media (max-width: 410px) {
+   .home .login .label{
+    width: 100%;
+   }
+   
+   .home .login button{
+   width: 80%;
+   margin-bottom: 0px;
+   }
+ 
+   }
+
+   @media(min-width:410px){
+    .home .login .label{
+      width:30%;
+    }
+   }

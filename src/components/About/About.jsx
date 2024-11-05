@@ -16,10 +16,11 @@ const About = () => {
           <hr style={{color:"beige"}}/>
           </div>
 
-          <div className="card rounded-4 m-4 border-0 text-center abt" style={{height:"650px",width:"1200px"}}>
+          <div className="card rounded-4 m-4 border-0 text-center abt" style={{height:"650px"}}>
             <h4 className='text-start w-50 mt-4 position-absolute'
-             style={{marginLeft:"350px"}}
-             >Welcome to Popcorn, movie review and discovery site with a watchlist feature. With a vision to revolutionize Information technology, this project stands as a testament to the power of individual creativity and dedication. As a one-person powerhouse, Ganeshkumar brings a unique blend of expertise, innovation, and passion to every endeavor.
+             style={{marginLeft:"320px",height:"600px",overflow:"auto",width:"30px"}}
+             >Welcome to Popcorn, movie review and discovery site with a watchlist feature. With a 
+             vision to revolutionize Information technology, this project stands as a testament to the power of individual creativity and dedication. As a one-person powerhouse, Ganeshkumar brings a unique blend of expertise, innovation, and passion to every endeavor.
               <br />
               <br />
 

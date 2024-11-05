@@ -21,7 +21,28 @@ nav{
 }
 
 .navb .nav-link {
-  margin-right: 15px;
-  margin-left: 5px;
+  margin-inline: 8px;
 }
 
+@media(max-width:570px){
+  .wishlist{
+    height: 50px;
+    width: 50px;
+  }
+  .drop{
+    height: 30px;
+  }
+  .logo{
+    height: 20pt;
+    width: 120pt;
+  }
+}
+@media(max-width:490px){
+  .wishlist{
+    height: 40px;
+    width: 40px;
+  }
+  .drop{
+    height: 30px;
+  }
+}
