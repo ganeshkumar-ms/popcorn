@@ -4,8 +4,48 @@
   background-size: cover;
 }
 
-@media(max-width:550px){
+.abt{
+  overflow-y: auto;
+}
+
+.abt::-webkit-scrollbar{
+  display: none;
+}
+
+.abt h4{
+  padding-bottom: 25px;
+
+}
+
+
+
+@media(max-width:690px){
   .abt{
     position: absolute;
+    background: url(../Images/about\ responsive.jpeg);
   }
+
+
+  .abt h4{
+    margin-left: 40px;
+    width: 85%;
+  }
+}
+
+@media (min-width:690px) {
+  .abt h4{
+    margin-left :320px;
+    height: 600px;
+    width: 50%;
+  }
+
+
+  
+}
+
+@media (min-width:1330px) {
+  .abt h4{
+    margin-left :430px;
+  }
+  
 }

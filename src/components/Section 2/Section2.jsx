@@ -15,11 +15,10 @@ const Section2 = () => {
             <hr style={{ color: "beige" }} />
 
           </div>
-          <div className='text-light mt-3 rounded-4 px-md-5 w-100'>
+          <div className='text-light mt-3 rounded-4 px-md-4 w-100'>
             {/* card1 */}
 
-            <div className='card position-relative w-100 border-0 ott-card d-grid' style={{ background: "linear-gradient(to bottom, #564b4ae1, #d2d5a2, #E6EFC2)" }}>
-
+            <div className='card position-relative border-0 ott-card d-grid' style={{ background: "linear-gradient(to bottom, #564b4ae1, #d2d5a2, #E6EFC2)" }}>
 
               <div className="row">
 
@@ -30,7 +29,8 @@ const Section2 = () => {
                   <h2 className='text-dark'>Vaazhai | Tamil</h2>
                   <hr />
                   <div className='mt-3'>
-                    <button className='btn rounded-5 btn-dark platform'><a href="https://www.hotstar.com/" target='_blank' rel="noopener noreferrer">Disney+ Hotstar</a></button>
+                    <button className='btn rounded-5 btn-dark platform'>
+                      <a href="https://www.hotstar.com/" target='_blank' rel="noopener noreferrer">Disney+ Hotstar</a></button>
                     <button className='btn ms-3'><BsFillBookmarkHeartFill size={28} /></button>
                   </div>
                 </div>

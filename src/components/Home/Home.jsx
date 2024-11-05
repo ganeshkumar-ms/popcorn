@@ -20,7 +20,7 @@ const Home = () => {
     <div>
       <div className='col-md-11 m-4'>
         <div className='ms-4'>
-          <div className="card rounded-3 p-5 border-0 text-center home container-fluid w-100 h-50" style={{ justifyContent: "center" }}>
+          <div className="card rounded-3 py-5 border-0 text-center home container-fluid w-100 h-50" style={{ justifyContent: "center" }}>
             <div className=''>
               <img src="./Popcorn.png" alt="" style={{ height: "70px", alignItems: "center", justifyContent: "center" }} className='mb-5 position-relative' />
               <form className='row g-3 needs-validation justify-content-center login' novalidate>
