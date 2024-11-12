@@ -1,10 +1,22 @@
 import React from 'react'
 import './Reviews.css'
 import { Footer } from '../Footer/Footer'
-import { BsFillBookmarkHeartFill } from 'react-icons/bs'
+import { BsBookmarkHeartFill } from 'react-icons/bs'
 import { FaStar } from 'react-icons/fa'
+import { useState } from 'react'
 
 export const Reviews = () => {
+  // Step 1: Create an array to store bookmark states for each card.
+  const [bookmarks, setBookmarks] = useState([false, false, false, false]);
+
+  // Step 2: Handle the bookmark toggle for a specific card.
+  const handleBookmarkClick = (index) => {
+    const newBookmarks = [...bookmarks]; // Create a copy of the current bookmark states
+    newBookmarks[index] = !newBookmarks[index]; // Toggle the state of the clicked card
+    setBookmarks(newBookmarks); // Update the state
+  };
+
+  
   return (
     <div className='bgi'>
       <div>
@@ -20,7 +32,9 @@ export const Reviews = () => {
               <h2 className='moviname'>Hitler (Tamil|2024)</h2>
               <div className='my-2'>
                 <button className='btn rounded-5 btn-dark platform'><a href="https://www.primevideo.com/offers/nonprimehomepage/ref=atv_dl_rdr" target='_blank' rel="noopener noreferrer">Amazon Prime</a></button>
-                <button className='btn'><BsFillBookmarkHeartFill size={28} /></button>
+                <button className='btn ms-3 border-0' onClick={() => handleBookmarkClick(1)}>
+                    {bookmarks[1] ? (<BsBookmarkHeartFill size={28} color="red" />) : (<BsBookmarkHeartFill size={28} color="black" />)}
+                  </button>
               </div>
               <h4>
                 Kinda Modified version of “GentleMan”. Such an Outdated film; Predictable scenes with no high moments. Nothing to rave abt artists performance & characterization. Gud to see CharanRaj. Bad 1st hlf & Avg 2nd. Narration is Mega BORE!</h4>
@@ -39,7 +53,9 @@ export const Reviews = () => {
               <h2 className='moviname'>BlinkTwice (English|2024)</h2>
               <div className='my-2'>
                 <button className='btn rounded-5 btn-dark platform'><a href="https://www.primevideo.com/offers/nonprimehomepage/ref=atv_dl_rdr" target='_blank' rel="noopener noreferrer">Amazon Prime</a></button>
-                <button className='btn'><BsFillBookmarkHeartFill size={28} /></button>
+                <button className='btn ms-3 border-0' onClick={() => handleBookmarkClick(2)}>
+                    {bookmarks[2] ? (<BsBookmarkHeartFill size={28} color="red" />) : (<BsBookmarkHeartFill size={28} color="black" />)}
+                  </button>
               </div>
               <h4>
               Channing Tatum super Perf. Naomi ok. Visually Rich. Thr r lot of drinks & drugs, but no excitement or tension. Repetetive scenes r thr for more than an Hour. Familiar Twists r major drawback. AVERAGE Psychological Thriller!</h4>
@@ -60,7 +76,9 @@ export const Reviews = () => {
               <h2 className='moviname'>Trouble / Strul (Swedish|2024)</h2>
               <div className='my-2'>
                 <button className='btn rounded-5 btn-dark platform'><a href="https://www.netflix.com" target='_blank' rel="noopener noreferrer">Netflix</a></button>
-                <button className='btn'><BsFillBookmarkHeartFill size={28} /></button>
+                <button className='btn ms-3 border-0' onClick={() => handleBookmarkClick(3)}>
+                    {bookmarks[3] ? (<BsBookmarkHeartFill size={28} color="red" />) : (<BsBookmarkHeartFill size={28} color="black" />)}
+                  </button>
               </div>
               <h4>
               About an Electrician who was weongly convicted of murder, how he prove his innocence. Uneven Perf. Here & thr very few comedy scenes bring laughs. Otherwise its quite Flat, No Logics. A Highly Outdated Comedy Thriller. BELOW AVERAGE!</h4>
