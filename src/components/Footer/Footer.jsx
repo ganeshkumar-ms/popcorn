@@ -24,20 +24,18 @@ export const Footer = () => {
 
     <section class="">
       <form action="">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mx-2">
           <div class="col-12">
             <p>
               <strong>Sign up for our newsletter</strong>
             </p>
           </div>
           <div class="col-md-5 col-8 text-center">
-            <div data-mdb-input-init class="form-outline mb-4 ms-2 me-2">
+            <div data-mdb-input-init class="form-outline mb-4">
               <input type="email" placeholder='Email address' class="form-control" />
             </div>
           </div>
-  
           <div class="col-auto">
-
             <button data-mdb-ripple-init type="submit" class="btn btn-warning mb-4">
               Subscribe
             </button>
@@ -46,16 +44,16 @@ export const Footer = () => {
       </form>
     </section>
  
-    <section class="mb-2 ms-4 me-4">
+    <section>
       <p>
-      For more information, subscribe to our newsletter and never miss a review! Get insights, recommendations, and exclusive content delivered straight to your inbox. 
+      For more information, subscribe to our newsletter and never miss a review! 
       </p>
     </section>
   
     
-  <div class="text-center p-3" >
+  <div class="text-center pb-4 mt-2" >
     © 2024 Copyright:
-    <a class="text-reset fw-bold" href="https://ganeshkumar-portfolio.netlify.app/" target='_blank' rel="noopener noreferrer">Ganeshkumar M</a>
+    <a class="text-reset fw-bold" href="https://ganeshkumar-portfolio.netlify.app/" target='_blank' rel="noopener noreferrer">Ganeshkumar M</a> 
   </div>
  
 </footer>

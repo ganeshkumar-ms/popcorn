@@ -6,12 +6,13 @@
 import React from 'react'
 import './section1.css'
 import { Link } from 'react-router-dom'
-import { FaStar } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaStar, FaWhatsapp } from 'react-icons/fa'
 import { Footer } from '../Footer/Footer'
 import { FaShareAlt } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { BsBookmarkHeartFill } from 'react-icons/bs'
 import { useState } from 'react'
+import { IoIosMail } from 'react-icons/io'
 
 
 export default function Section1() {
@@ -58,8 +59,16 @@ export default function Section1() {
                 <button className='btn ms-1 border-0' onClick={handleBookmarkClick}>
                   {isBookmarked ? (<BsBookmarkHeartFill size={28} color="red" />) : (<BsBookmarkHeartFill size={28} color="black" />)}
                 </button>
-                <button className='btn ms-2 col-md-3 border-0'>
-                  <FaShareAlt size={25} />
+                <button className='btn ms-2 col-md-3 border-0 share'>
+                  <div class="share">
+                    <span>
+                      <i><FaShareAlt size={25}/></i>
+                    </span>
+                    <Link to =""><i class="whatsapp"><FaWhatsapp color='black'/></i></Link>
+                    <Link to =""><i class="fb"><FaFacebook color='black'/></i></Link>
+                    <Link to =""><i class="insta"></i><FaInstagram color='black'/></Link>
+                    <Link to =""><i class="maillink"></i><IoIosMail color='black'/></Link>
+                  </div>
                 </button>
               </div>
             </div>
