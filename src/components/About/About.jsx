@@ -16,7 +16,7 @@ const About = () => {
           <hr style={{color:"beige"}}/>
           </div>
 
-          <div className="card rounded-4 m-4 border-0 abt" style={{height:"650px"}}>
+          <div className="card rounded-4 m-3 border-0 abt" style={{height:"650px"}}>
             <h4 className='text-start mt-4 position-absolute'>
               Welcome to Popcorn, movie review and discovery site with a watchlist feature. With a 
              vision to revolutionize Information technology, this project stands as a testament to the power of individual creativity and dedication. As a one-person powerhouse, Ganeshkumar brings a unique blend of expertise, innovation, and passion to every endeavor.
