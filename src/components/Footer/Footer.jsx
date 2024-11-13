@@ -44,7 +44,7 @@ export const Footer = () => {
       </form>
     </section>
  
-    <section>
+    <section className='mx-3'>
       <p>
       For more information, subscribe to our newsletter and never miss a review! 
       </p>
