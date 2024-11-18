@@ -59,16 +59,19 @@ export default function Section1() {
               <hr />
 
         
-              <div className="button-container d-flex flex-wrap gap-3">
-          
-                <h1 className="trailer btn btn-dark px-3 my-3">
+              <div className="button-container d-flex flex-wrap  ">
+          <div className='col-md-3 col-2'>
+                <h1 className="trailer btn my-3 " style={{background:"black",padding:"0px"}}>
                   <a href="https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x" target="_blank" rel="noopener noreferrer">
-                    <BsYoutube size={20} className="me-2" />
-                    Watch Trailer
+                  <div className='d-flex ms-md-3 mt-2'>
+                    <BsYoutube size={20} className="me-2 utube-logo" />
+                   <p> Watch Trailer</p>
+                   </div>
                   </a>
                 </h1>
+                </div>
     
-                <button className="btn border-0 bookmark-btn" onClick={handleBookmarkClick}>
+                <button className="btn border-0 bookmark-btn col-1 mx-3" onClick={handleBookmarkClick}>
                   {isBookmarked ? (
                     <BsBookmarkHeartFill size={30} color="red" />
                   ) : (
@@ -76,7 +79,7 @@ export default function Section1() {
                   )}
                 </button>
 
-                <button className="btn border-0 mb-5" >
+                <button className="btn border-0 mb-5 me-md-5 col-6" >
                   <div className="share">
                     <span><FaShareAlt size={25} style={{marginBottom:"38px"}}/></span>
 
