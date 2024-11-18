@@ -6,13 +6,14 @@
 import React from 'react'
 import './section1.css'
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaStar, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook,FaStar, FaTelegram, FaWhatsapp } from 'react-icons/fa'
 import { Footer } from '../Footer/Footer'
 import { FaShareAlt } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { BsBookmarkHeartFill } from 'react-icons/bs'
 import { useState } from 'react'
-import { IoIosMail } from 'react-icons/io'
+import { FacebookShareButton, TelegramShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share'
+import {FaXTwitter } from 'react-icons/fa6'
 
 
 export default function Section1() {
@@ -20,6 +21,8 @@ export default function Section1() {
   const handleBookmarkClick = () => {
     setIsBookmarked(!isBookmarked)
   }
+  const shareUrl = "https://popcorn-cine.netlify.app";
+
   return (
     <div>
       <div class="mweek container-fluid h-100 w-100 ">
@@ -54,23 +57,57 @@ export default function Section1() {
               <hr />
               <h5>OTT Release : 14 Nov 2024</h5>
               <hr />
-              <div class="buttons gap-3">
-                <h1 class="trailer btn btn-dark px-4 mt-2 me-2" ><a href="https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x" target='_blank' rel="noopener noreferrer">  <BsYoutube size={20} className='me-2 ' /> Watch Trailer  </a></h1>
-                <button className='btn ms-1 border-0' onClick={handleBookmarkClick}>
-                  {isBookmarked ? (<BsBookmarkHeartFill size={28} color="red" />) : (<BsBookmarkHeartFill size={28} color="black" />)}
+
+        
+              <div className="button-container d-flex flex-wrap gap-3">
+          
+                <h1 className="trailer btn btn-dark px-3 my-3">
+                  <a href="https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x" target="_blank" rel="noopener noreferrer">
+                    <BsYoutube size={20} className="me-2" />
+                    Watch Trailer
+                  </a>
+                </h1>
+    
+                <button className="btn border-0 bookmark-btn" onClick={handleBookmarkClick}>
+                  {isBookmarked ? (
+                    <BsBookmarkHeartFill size={30} color="red" />
+                  ) : (
+                    <BsBookmarkHeartFill size={30} color="black" />
+                  )}
                 </button>
-                <button className='btn ms-2 col-md-3 border-0 share'>
-                  <div class="share">
-                    <span>
-                      <i><FaShareAlt size={25}/></i>
-                    </span>
-                    <Link to =""><i class="whatsapp"><FaWhatsapp color='black'/></i></Link>
-                    <Link to =""><i class="fb"><FaFacebook color='black'/></i></Link>
-                    <Link to =""><i class="insta"></i><FaInstagram color='black'/></Link>
-                    <Link to =""><i class="maillink"></i><IoIosMail color='black'/></Link>
+
+                <button className="btn border-0 mb-5" >
+                  <div className="share">
+                    <span><FaShareAlt size={25} style={{marginBottom:"38px"}}/></span>
+
+                    <Link className='whatsapp'>
+                    <WhatsappShareButton url={shareUrl}>
+                      <FaWhatsapp color="black" />
+                      </WhatsappShareButton>
+                    </Link>
+
+                    <Link className='facebook'>
+                    <FacebookShareButton url={shareUrl}>
+                      <FaFacebook color="black" />
+                    </FacebookShareButton>
+                    </Link>
+                    
+                    <Link className='twitter'>
+                    <TwitterShareButton url={shareUrl}>
+                      <FaXTwitter color="black" />
+                      </TwitterShareButton>
+                    </Link>
+
+                    <Link  className='telegram'>
+                    <TelegramShareButton url={shareUrl}>
+                      <FaTelegram color="black" />
+                      </TelegramShareButton>
+                    </Link>
                   </div>
+                   
                 </button>
               </div>
+ 
             </div>
 
           </div>

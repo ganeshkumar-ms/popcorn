@@ -28,22 +28,21 @@
 
 
 .card .share {
-  height: 70px;
-  width: 200px;
+  height: 80px;
+  width:50%;
   border-radius: 50px;
   display: flex;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   transition: 1.8s ease;
-  /* border: 1px solid #fff; */
 }
 
 
 .card .share span {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 80%;
   color: #111;
   text-align: center;
   line-height: 80px;
@@ -96,40 +95,10 @@
   transition-delay: 0.4s;
 }
 
-.card .share .whatsapp {
-  transition: 0.5s ease-in;
-}
 
-.card .share .whatsapp:hover {
-  transform: scale(1.5);
-}
-
-.card .share .fb {
-  transition: 0.5s ease-in;
-}
-
-.card .share .fb:hover {
-  transform: scale(1.5);
-}
-
-.card .share .insta {
-  transition: 0.5s ease-in;
-}
-
-.card .share .insta:hover {
-  transform: scale(1.5);
-}
-
-.card .share .maillink {
-  transition: 0.5s ease-in;
-}
-
-.card .share .maillink:hover {
-  transform: scale(1.5);
-}
-
-@media (min-width:700px){
-  .card .share{
-    margin-left: 150px;
+@media (max-width:470px) {
+  .card .share span{
+   padding-right: 100px;
   }
+  
 }
