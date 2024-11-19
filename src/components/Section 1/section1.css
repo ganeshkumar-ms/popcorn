@@ -21,6 +21,7 @@
   text-decoration: none;
   color: white;
 
+
 }
 
 .trailer p {
@@ -106,7 +107,7 @@
 }
 
 
-@media (max-width:540px) {
+@media (max-width:560px) {
   .trailer p {
     visibility: hidden;
     font-size: 0px;
@@ -133,10 +134,14 @@
     margin-left: -10px;
   }
 
+  .card .copied-message{
+    margin-left: 12px;
+  }
+
 }
 
 
-@media (max-width:767px) and (min-width:540px) {
+@media (max-width:767px) and (min-width:560px) {
 
   .trailer {
     width: 140px;
@@ -156,9 +161,13 @@
     margin-left: 10px;
   }
 
+ .buttons .copied-message{
+    margin-right: 30px;
+  }
+
 }
 
-@media (max-width:1075px) and (min-width:768px) {
+@media (max-width:1200px) and (min-width:768px) {
 
   .trailer {
     width: 140px;
@@ -178,6 +187,7 @@
 
   .card .share:hover {
     margin-left: 10px;
+    transition: all;
   }
 
 }

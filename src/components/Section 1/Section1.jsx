@@ -30,7 +30,7 @@ export default function Section1() {
 
   const handleCopy = () => {
     setCopied(true);
-    setTimeout(() => setCopied(false), 1000);
+    setTimeout(() => setCopied(false), 1500);
   };
 
   return (
@@ -69,7 +69,7 @@ export default function Section1() {
               <hr />
 
 
-              <div className="button-container d-flex flex-wrap  ">
+              <div className="button-container d-flex flex-wrap ">
                 <div className='col-xl-3 '>
                   <h1 className="trailer btn my-3 " style={{ background: "black", padding: "0px" }}>
                     <a href="https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x" target="_blank" rel="noopener noreferrer">
@@ -89,21 +89,20 @@ export default function Section1() {
                   )}
                 </button>
 
-                <button className="btn border-0 mb-5 me-md-5 col-xl-6" >
-                    {copied && (
-                        <span className="copied-message">
-                          Copied!
-                        </span>
-                      )}
+                <button className="btn border-0 mb-5 me-md-5 col-xl-6 " >
                   <div className="share">
                     <span><FaShareAlt size={25} style={{ marginBottom: "38px" }} /></span>
+                    {copied && (
+                      <div style={{ position: 'absolute', top: '-7px', left: '0', background: 'green', color: 'white', padding: '2px', borderRadius: '3px' }}>
+                        Copied!
+                      </div>
+                    )}
                     <Link className="copylink" style={{ position: 'relative', display: 'inline-block' }}>
                       <CopyToClipboard text={shareUrl} onCopy={handleCopy}>
                         <FaRegCopy color="black" style={{ cursor: 'pointer' }} />
                       </CopyToClipboard>
-                      
-                    </Link>
 
+                    </Link>
                     <Link className='facebook'>
                       <FacebookShareButton url={shareUrl}>
                         <FaFacebook color="black" />
