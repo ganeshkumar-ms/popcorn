@@ -128,10 +128,12 @@
   .card .share {
     margin-left: 20px;
     height: 50px;
+    transition: 2s;
   }
 
   .card .share:hover {
     margin-left: -10px;
+    transition: 2s;
   }
 
   .card .copied-message{
@@ -155,10 +157,12 @@
   .card .share {
     margin-left: 50px;
     height: 50px;
+    transition: 2s;
   }
 
   .card .share:hover {
     margin-left: 10px;
+    transition: 2s;
   }
 
  .buttons .copied-message{
@@ -183,11 +187,14 @@
   .card .share {
     margin-left: 50px;
     height: 50px;
+    transition: 2s;
+
   }
 
   .card .share:hover {
     margin-left: 10px;
-    transition: all;
+    transition: 2s;
+
   }
 
 }
