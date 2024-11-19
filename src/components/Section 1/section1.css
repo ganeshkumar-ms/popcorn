@@ -19,7 +19,7 @@
 
 .trailer a {
   text-decoration: none;
-  color: red;
+  color: white;
 
 }
 
@@ -30,7 +30,7 @@
 
 
 .trailer {
-  height: 40px;
+  height: 37px;
   width: 140px;
 }
 
@@ -45,6 +45,7 @@
   position: absolute;
   cursor: pointer;
   transition: 1.8s ease;
+  margin-left: 150px;
 }
 
 
@@ -80,6 +81,7 @@
 
 .card .share:hover {
   transform: scale(1.1);
+
 }
 
 .card .share:hover a {
@@ -104,20 +106,79 @@
 }
 
 
-@media (max-width:470px) {
+@media (max-width:540px) {
   .trailer p {
     visibility: hidden;
     font-size: 0px;
   }
 
   .trailer {
- width: 55px;
- margin-top: 10px;
-     
+    width: 55px;
+    height: 37px;
   }
-  .trailer .utube-logo{
-   width: 100%;
-   padding-left: 5px;
+
+  .trailer .utube-logo {
+    height: 30px;
+    width: 100%;
+    padding-left: 6px;
+    margin-top: -4px;
+  }
+
+  .card .share {
+    margin-left: 20px;
+    height: 50px;
+  }
+
+  .card .share:hover {
+    margin-left: -10px;
   }
 
 }
+
+
+@media (max-width:767px) and (min-width:540px) {
+
+  .trailer {
+    width: 140px;
+    height: 37px;
+  }
+
+  .trailer .utube-logo {
+    margin-left: 10px;
+  }
+
+  .card .share {
+    margin-left: 50px;
+    height: 50px;
+  }
+
+  .card .share:hover {
+    margin-left: 10px;
+  }
+
+}
+
+@media (max-width:1075px) and (min-width:768px) {
+
+  .trailer {
+    width: 140px;
+    height: 37px;
+   
+  }
+
+  .trailer .utube-logo {
+    margin-left: 5px;
+  }
+
+
+  .card .share {
+    margin-left: 50px;
+    height: 50px;
+  }
+
+  .card .share:hover {
+    margin-left: 10px;
+  }
+
+}
+

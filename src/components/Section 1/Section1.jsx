@@ -6,22 +6,32 @@
 import React from 'react'
 import './section1.css'
 import { Link } from 'react-router-dom'
-import { FaFacebook,FaStar, FaTelegram, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaRegCopy, FaStar } from 'react-icons/fa'
 import { Footer } from '../Footer/Footer'
 import { FaShareAlt } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { BsBookmarkHeartFill } from 'react-icons/bs'
 import { useState } from 'react'
-import { FacebookShareButton, TelegramShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share'
-import {FaXTwitter } from 'react-icons/fa6'
+import { FacebookShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share'
+import { FaXTwitter } from 'react-icons/fa6'
+import CopyToClipboard from 'react-copy-to-clipboard'
+import { ImWhatsapp } from 'react-icons/im'
 
 
 export default function Section1() {
+  const shareUrl = "https://popcorn-cine.netlify.app/movieoftheweek";
+
   const [isBookmarked, setIsBookmarked] = useState(false);
+  const [copied, setCopied] = useState(false);
+
   const handleBookmarkClick = () => {
     setIsBookmarked(!isBookmarked)
   }
-  const shareUrl = "https://popcorn-cine.netlify.app";
+
+  const handleCopy = () => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1000);
+  };
 
   return (
     <div>
@@ -58,20 +68,20 @@ export default function Section1() {
               <h5>OTT Release : 14 Nov 2024</h5>
               <hr />
 
-        
+
               <div className="button-container d-flex flex-wrap  ">
-          <div className='col-md-3 col-2'>
-                <h1 className="trailer btn my-3 " style={{background:"black",padding:"0px"}}>
-                  <a href="https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x" target="_blank" rel="noopener noreferrer">
-                  <div className='d-flex ms-md-3 mt-2'>
-                    <BsYoutube size={20} className="me-2 utube-logo" />
-                   <p> Watch Trailer</p>
-                   </div>
-                  </a>
-                </h1>
+                <div className='col-xl-3 '>
+                  <h1 className="trailer btn my-3 " style={{ background: "black", padding: "0px" }}>
+                    <a href="https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x" target="_blank" rel="noopener noreferrer">
+                      <div className='d-flex ms-md-3 mt-2 '>
+                        <BsYoutube size={20} className="me-2 utube-logo" />
+                        <p> Watch Trailer</p>
+                      </div>
+                    </a>
+                  </h1>
                 </div>
-    
-                <button className="btn border-0 bookmark-btn col-1 mx-3" onClick={handleBookmarkClick}>
+
+                <button className="btn border-0 bookmark col-xl-1 mx-3" onClick={handleBookmarkClick}>
                   {isBookmarked ? (
                     <BsBookmarkHeartFill size={30} color="red" />
                   ) : (
@@ -79,38 +89,45 @@ export default function Section1() {
                   )}
                 </button>
 
-                <button className="btn border-0 mb-5 me-md-5 col-6" >
+                <button className="btn border-0 mb-5 me-md-5 col-xl-6" >
+                    {copied && (
+                        <span className="copied-message">
+                          Copied!
+                        </span>
+                      )}
                   <div className="share">
-                    <span><FaShareAlt size={25} style={{marginBottom:"38px"}}/></span>
-
-                    <Link className='whatsapp'>
-                    <WhatsappShareButton url={shareUrl}>
-                      <FaWhatsapp color="black" />
-                      </WhatsappShareButton>
+                    <span><FaShareAlt size={25} style={{ marginBottom: "38px" }} /></span>
+                    <Link className="copylink" style={{ position: 'relative', display: 'inline-block' }}>
+                      <CopyToClipboard text={shareUrl} onCopy={handleCopy}>
+                        <FaRegCopy color="black" style={{ cursor: 'pointer' }} />
+                      </CopyToClipboard>
+                      
                     </Link>
 
                     <Link className='facebook'>
-                    <FacebookShareButton url={shareUrl}>
-                      <FaFacebook color="black" />
-                    </FacebookShareButton>
+                      <FacebookShareButton url={shareUrl}>
+                        <FaFacebook color="black" />
+                      </FacebookShareButton>
                     </Link>
-                    
+
                     <Link className='twitter'>
-                    <TwitterShareButton url={shareUrl}>
-                      <FaXTwitter color="black" />
+                      <TwitterShareButton url={shareUrl}>
+                        <FaXTwitter color="black" />
                       </TwitterShareButton>
                     </Link>
 
-                    <Link  className='telegram'>
-                    <TelegramShareButton url={shareUrl}>
-                      <FaTelegram color="black" />
-                      </TelegramShareButton>
+                    <Link className='whatsapp'>
+                      <WhatsappShareButton url={shareUrl}>
+                        <ImWhatsapp color="black" />
+                      </WhatsappShareButton>
                     </Link>
+
                   </div>
-                   
+
                 </button>
+
               </div>
- 
+
             </div>
 
           </div>
