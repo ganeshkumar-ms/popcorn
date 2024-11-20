@@ -1,3 +1,6 @@
+
+//Home
+
 import React, { useState } from 'react'
 import './Home.css'
 import { Footer } from '../Footer/Footer'

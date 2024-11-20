@@ -1,3 +1,6 @@
+
+//About
+
 import React from 'react'
 import { Footer } from '../Footer/Footer'
 import './About.css'
@@ -7,6 +10,11 @@ import { Link } from 'react-router-dom';
 import { FaLinkedinIn } from 'react-icons/fa';
 import Aboutsvg from '../svg/aboutsvg';
 
+const links={
+  linkedin:"https://www.linkedin.com/in/ganeshkumar-ms",
+  whatsapp:"https://wa.me/9940999860",
+  email:"mailto:ganesh71730@gmail.com"
+}
 
 const About = () => {
   return (
@@ -30,9 +38,9 @@ Popcorn is committed to delivering exceptional results that exceed expectations.
 Get in Touch For hiring inquiries or freelance opportunities, please contact:
 <br /><br />
 <div className='d-flex gap-4'>
-<Link to="https://www.linkedin.com/in/ganeshkumar-ms" target='_blank'><FaLinkedinIn size={"30px"}/></Link>
-<Link to="https://wa.me/9940999860" target='_blank'><IoLogoWhatsapp size={"30px"}/></Link>
-<Link to="mailto:ganesh71730@gmail.com" target='_blank'><IoIosMail size={"30px"}/></Link>
+<Link to={links.linkedin} target='_blank'><FaLinkedinIn size={"30px"}/></Link>
+<Link to={links.whatsapp} target='_blank'><IoLogoWhatsapp size={"30px"}/></Link>
+<Link to={links.email} target='_blank'><IoIosMail size={"30px"}/></Link>
 
 
 
