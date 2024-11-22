@@ -6,6 +6,12 @@ nav{
   font-weight: 600;
 }
 
+.drop{
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .wishlist:hover{
   border-radius: 20%;
   transform: scale(1.13);

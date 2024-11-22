@@ -1,0 +1,11 @@
+.forgetpwbg {
+  /* background: url(../Images/home.jpg); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 600px !important;
+  background-size: cover; 
+  transition: background-size 0.5s ease-in-out;
+
+}
+
+

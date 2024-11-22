@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./navbar.css"
-import { Offcanvas } from 'react-bootstrap';
+import { Offcanvas,Dropdown} from 'react-bootstrap';
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import Navbarsvg from '../svg/navbarsvg';
 
@@ -40,10 +40,22 @@ export default function Navbar() {
                 <a class="nav-link" href="newOTTs">New OTT Releases</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="reviews">Reviews</a>
+                <a class="nav-link" href="exclusive">Exclusive updates</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about">About Us</a>
+                <a class="nav-link" href="reviews">Reviews</a>
+              </li>
+              <li className="nav-item">
+                <Dropdown>
+                  <Dropdown.Toggle variant="link" id="navbarDropdown" className="nav-link" style={{ background: 'transparent', border: 'none' }}>
+                    Others 
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu className='bg-warning-subtle drop'>
+                    <Dropdown.Item href="/profile" ><b>Profile</b></Dropdown.Item>
+                    <Dropdown.Item href="/about"><b>About</b></Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </li>
             </ul>
           </div>
