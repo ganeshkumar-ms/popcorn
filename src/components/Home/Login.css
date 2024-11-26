@@ -1,5 +1,5 @@
 .loginbg {
-  background: url(../Images/home.jpg);
+  background: url(../Images/login.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 600px !important;
@@ -39,6 +39,9 @@ strong a:hover {
   .responsiveform {
     padding-inline: 150px;
   }
+  .noaccount{
+    color: lightgray;
+  }
 }
 
 @media (max-width: 576px) {
@@ -63,6 +66,9 @@ strong a:hover {
 }
 .responsiveform {
   padding-inline: 700px;
+}
+.noaccount{
+  color: lightgray;
 }
 }
 

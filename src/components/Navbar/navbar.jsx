@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import "./navbar.css"
-import { Offcanvas,Dropdown} from 'react-bootstrap';
-import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+import { Offcanvas } from 'react-bootstrap';
 import Navbarsvg from '../svg/navbarsvg';
+import { FaSortAmountDown } from 'react-icons/fa';
+import { CgMenuLeft } from 'react-icons/cg';
+import { IoIosArrowDropdownCircle } from 'react-icons/io';
 
 export default function Navbar() {
 
@@ -26,7 +28,7 @@ export default function Navbar() {
             <div>
               <button onClick={handleIconClick}>
                 {
-                  isActive ? <AiFillCaretUp size={35} color='black' title='Menu' className='bg-warning border-0' /> : <AiFillCaretDown size={35} color='black' title='Menu' className='bg-warning border-0' />
+                  isActive ? <FaSortAmountDown size={30} color='black' title='Menu' className='bg-warning border-0' /> : <CgMenuLeft size={35} color='black' title='Menu' className='bg-warning border-0' />
                 }
               </button>
             </div>
@@ -34,28 +36,25 @@ export default function Navbar() {
           <div class="collapse navbar-collapse ms-3 navb" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="movieoftheweek">Movie of the Week</a>
+                <a class="nav-link" href="movieoftheweek">Movie of the week</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="newOTTs">New OTT Releases</a>
+                <a class="nav-link" href="newOTTs">NewOTT's</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="exclusive">Exclusive updates</a>
+                <a class="nav-link" href="exclusive">Xclusive</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="reviews">Reviews</a>
               </li>
-              <li className="nav-item">
-                <Dropdown>
-                  <Dropdown.Toggle variant="link" id="navbarDropdown" className="nav-link" style={{ background: 'transparent', border: 'none' }}>
-                    Others 
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu className='bg-warning-subtle drop'>
-                    <Dropdown.Item href="/profile" ><b>Profile</b></Dropdown.Item>
-                    <Dropdown.Item href="/about"><b>About</b></Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
+              <li class="nav-item dropdown" >
+                <a class="nav-link" href="##" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others<IoIosArrowDropdownCircle size={25} className='ms-1 mb-1'/>
+                </a>
+                <ul class="dropdown-menu border-0 bg-warning">
+                  <li><a class="dropdown-item bg-warning border-bottom border-warning-subtle" href="/profile"><strong>Profile</strong></a></li>
+                  <li><a class="dropdown-item bg-warning" href="/about"><strong>About</strong></a></li>
+                </ul>
               </li>
             </ul>
           </div>

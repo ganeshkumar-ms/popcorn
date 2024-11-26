@@ -19,9 +19,6 @@ nav{
 }
 
 .navb a:hover{
-  /* border-bottom: 3px solid ;
-  padding-bottom: 3px;
-  border-color:  red ; */
   transition: .5s;
 
 }
@@ -52,3 +49,13 @@ nav{
     height: 30px;
   }
 }
+
+@media (min-width:900px) {
+  .navbar-nav .nav-link:active {
+    transform: scale(0.95); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+}
+
+
+

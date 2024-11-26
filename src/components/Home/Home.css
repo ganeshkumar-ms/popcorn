@@ -1,0 +1,33 @@
+.homebg {
+  backdrop-filter: blur(2px);
+  height: 800px;
+  justify-content: center;
+}
+
+.homebg h1 {
+  color: rgb(255, 165, 0);
+  font-size: 3rem;
+  font-family: "Afacad Flux", sans-serif;
+  transition: opacity 0.5s ease;
+  font-weight: 500;
+}
+
+.carousel-item{
+  height: 400px;
+}
+
+.carousel-item img{
+  height: 400px;
+ background-size: cover;
+}
+
+
+@media (max-width:900px){
+  .carousel-item{
+    height: 250px;
+  }
+  .carousel-item img{
+    height: 250px;
+  }
+}
+

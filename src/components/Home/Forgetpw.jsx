@@ -47,11 +47,12 @@ const ForgetPassword = () => {
             />
             <div className="responsiveform" style={{marginTop:"80px"}}>
               {isSubmitted ? (
-                <div className="success-message" style={{marginTop:"110px"}}>
+                <><div className="success-message mx-4 bg-white rounded-5 p-3 " style={{ marginTop: "110px" }}>
                   <h4>Your reset password link has been sent to your email!</h4>
                   <p>Please check your inbox for the reset link.</p>
-                  <Link to="/login" className="btn btn-dark mt-3">Back to Login</Link>
-                </div>
+                </div><div>
+                    <Link to="/login" className="btn btn-dark mt-3">Back to Login</Link>
+                  </div></>
               ) : (
                 <form className="row needs-validation signup " noValidate>
                   {/* Email Input */}

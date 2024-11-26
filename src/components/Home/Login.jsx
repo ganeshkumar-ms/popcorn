@@ -75,14 +75,14 @@ const Login = () => {
               <b>Login</b> <RiLoginCircleFill />
             </button>
             <strong><Link to="/forgetpassword" >Forget Password?</Link></strong>
-            <p className="signup">
+            <p className="mt-2 noaccount">
               Don't have an account? <strong><Link to='/signup'>Sign up</Link></strong>
             </p>
-  
           </form>
+  
         </div>
   
-        <div className="text-white quote py-4 mt-4">
+        <div className="text-white py-4 mt-4" >
           <h1>
             <b> Cinema is a matter of what's in the frame and what's not</b>
           </h1>

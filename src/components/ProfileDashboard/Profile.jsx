@@ -47,12 +47,12 @@ const Profile = () => {
       <div className="container my-4">
         {/* Home Button */}
         <div className="d-flex justify-content-start mb-3">
-          <Link to="/" className="btn btn-light btn-sm">
+          <Link to="/" className="btn bg-secondary-subtle btn-sm">
             <FaHome /> Home
           </Link>
         </div>
 
-        <div className="card profile-card shadow-lg bg-warning-subtle">
+        <div className="card profile-card shadow-lg bg-secondary-subtle">
           <div className="card-header text-center">
             <h3>Profile Dashboard</h3>
           </div>
