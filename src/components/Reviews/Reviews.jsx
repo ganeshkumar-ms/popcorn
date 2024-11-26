@@ -29,7 +29,7 @@ const ReviewsData = [
 
 const MovieReviewCard = ({ movie, index, handleBookmarkClick, isBookmarked }) => (
   <div className='review'>
-  <div className='card border-0 m-2 mb-4' style={{ background: "linear-gradient(to bottom, #564b4ae1, #d2d5a2, #E6EFC2)" }}>
+  <div className='card border-0 m-2 mb-4' style={{ background: "linear-gradient(to bottom, #7c6a6ae1, #d2d5a2, #E6EFC2)" }}>
     <div className='d-flex'>
       <div className='poster'>
       <img src={movie.poster} alt="Movie Poster" className='position-relative' />

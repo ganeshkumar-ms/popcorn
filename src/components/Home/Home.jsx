@@ -30,7 +30,7 @@ const Home = () => {
         <h1 className="text-center mt-4">
           {currentMessage}
         </h1>
-        <div className="card border-0 m-3">
+        <div className="card border-0 m-3 mt-3">
           <div id="carouselRide" className="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="2000">

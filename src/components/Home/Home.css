@@ -24,10 +24,10 @@
 
 @media (max-width:900px){
   .carousel-item{
-    height: 250px;
+    height: 230px;
   }
   .carousel-item img{
-    height: 250px;
+    height: 230px;
   }
 }
 
