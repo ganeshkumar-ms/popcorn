@@ -45,7 +45,7 @@ const MovieReviewCard = ({ movie, index, handleBookmarkClick, isBookmarked }) =>
           </button>
         </div>
         <h4>{movie.review}</h4>
-        <div className="d-flex my-3">
+        <div className="d-flex my-3 rating">
           <FaStar className='starlogo' size="1.5rem" color='#ff9200' />
           <h4 className="ms-2">{movie.rating}/10</h4>
         </div>
