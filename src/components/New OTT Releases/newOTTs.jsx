@@ -5,9 +5,9 @@ import React, { useState } from 'react';
 import { BsBookmarkHeartFill } from "react-icons/bs";
 import NewOTTsvg from '../svg/newOTTsvg';
 import { Footer } from '../Footer/Footer';
-import './Section2.css';
+import './newOTTs.css';
 
-const Section2 = () => {
+const NewOTTs = () => {
   
   const movies = [
     {
@@ -116,4 +116,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default NewOTTs;

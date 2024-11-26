@@ -1,7 +1,7 @@
 //movieoftheweek
 
 import React, { useState } from 'react';
-import './section1.css';
+import './movieoftheweek.css';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaRegCopy, FaStar } from 'react-icons/fa';
 import { Footer } from '../Footer/Footer';
@@ -17,7 +17,7 @@ import Movieoftheweeksvg from '../svg/movieoftheweeksvg';
 
 const URLformat = (name) => name.split(' ').join('_');
 
-export default function Section1() {
+export default function Movieoftheweek() {
   const wiki = "https://en.wikipedia.org/wiki/";
   const shareUrl = "https://popcorn-cine.netlify.app/movieoftheweek";
 
