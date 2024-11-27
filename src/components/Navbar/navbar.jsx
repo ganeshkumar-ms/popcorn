@@ -47,9 +47,9 @@ export default function Navbar() {
               <li class="nav-item">
                 <a class="nav-link" href="reviews">Reviews</a>
               </li>
-              <li class="nav-item dropdown border-0" >
-                <a class="nav-link border-0" href="##" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Others<IoIosArrowDropdownCircle size={25} className='ms-1 mb-1'/>
+              <li class="nav-item dropdown" >
+                <a class="nav-link" href="##" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others<IoIosArrowDropdownCircle size={25} className='border-0 ms-1 mb-1'/>
                 </a>
                 <ul class="dropdown-menu border-0 bg-warning">
                   <li><a class="dropdown-item bg-warning border-bottom border-warning-subtle" href="/profile"><strong>Profile</strong></a></li>

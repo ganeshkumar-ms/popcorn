@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'
 import { Footer } from '../Footer/Footer';
+import { FaUserCircle } from 'react-icons/fa';
 
 const Home = () => {
   const welcomeMessages = [
@@ -25,12 +26,16 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className='home'>
       <div className="homebg">
-        <h1 className="text-center mt-4">
+        <h1 className="text-center pt-4 position-relative welcome">
           {currentMessage}
         </h1>
-        <div className="card border-0 m-3 mt-3">
+        <div className='account'>
+          <a href="/login"><FaUserCircle size="38px" color='grey' className='rounded-5 account-icon' /></a>
+        </div>
+
+        <div className="card border-0 my-3 mt-3">
           <div id="carouselRide" className="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="2000">
@@ -53,10 +58,6 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <br />
-
-
-
       </div>
       <Footer />
     </div>
