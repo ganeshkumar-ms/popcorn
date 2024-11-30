@@ -34,8 +34,8 @@ const MovieReviewCard = ({ movie, index, handleBookmarkClick, isBookmarked }) =>
       <div className='poster'>
       <img src={movie.poster} alt="Movie Poster" className='position-relative' />
       </div>
-      <div className='m-3 textreview'>
-        <h2 className='moviname'>{movie.moviename} ({movie.language})</h2>
+      <div className='m-2 textreview'>
+        <h2 className='moviname border-bottom border-1 border-dark pb-2'>{movie.moviename} <br />({movie.language})</h2>
         <div className='my-2 buttons'>
           <button className='btn rounded-5 btn-dark platform'>
             <a href={movie.ottplatform} target='_blank' rel="noopener noreferrer">{movie.platformName}</a>

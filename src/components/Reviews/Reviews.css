@@ -1,20 +1,26 @@
 .review .card img {
-  height: 300px;
+  height: 310px;
 }
 
-@media (max-width: 1100px) {
+.review .card {
+  height: 310px;
+}
+
+
+@media (max-width: 550px) {
 
   .review .card {
-    height: 220px;
+    height: 250px;
   }
 
   .review .card img {
-    height: 220px;
+    height: 250px;
 
   }
 
   .review .card h2 {
-    font-size: 13px;
+    font-size: 15px;
+    margin-top: 0px;
 
   }
 
@@ -26,14 +32,17 @@
 
   .review .card .rating {
     position: absolute;
-    top:26px;
-    right:0px;
-   left: 290px;
+    top: 10px;
+    right: 0px;
+    left: 285px;
+  }
+
+  .review .card .rating h4 {
+    font-weight: 700;
   }
 
 
   .review .card .starlogo {
-    height: 18px;
     visibility: hidden;
   }
 
@@ -52,3 +61,136 @@
     justify-content: flex-start;
   }
 }
+
+@media (min-width:340px) and (max-width:360px) {
+  .review .card .rating {
+    left: 250px;
+  }
+
+  .review .card img {
+    width: 150px;
+
+  }
+}
+
+@media (min-width: 360px) and (max-width:400px) {
+
+  .review .card {
+    height: 250px;
+  }
+
+  .review .card img {
+    height: 250px;
+    width: 150px;
+
+  }
+
+  .review .card h2 {
+    font-size: 14px;
+    margin-top: 0px;
+
+  }
+
+  .review .card h4 {
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+  }
+
+  .review .card .rating {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    left: 275px;
+  }
+
+  .review .card .rating h4 {
+    font-weight: 500;
+  }
+
+
+  .review .card .starlogo {
+    visibility: hidden;
+  }
+
+  .review .card .buttons .btn {
+    padding: 2px 12px;
+    font-size: 10px;
+  }
+
+  .review .card .buttons .bookmark {
+    height: 20px;
+  }
+
+
+  .review .card .buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+@media (min-width: 400px) and (max-width:470px) {
+
+  .review .card .rating {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    left:310px;
+  }
+
+  .review .card .rating h4 {
+    font-weight: 700;
+  }
+
+}
+
+@media (min-width: 470px) and (max-width:550px) {
+
+  .review .card .rating {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    left:420px;
+  }
+
+  .review .card .rating h4 {
+    font-weight: 700;
+  }
+
+}
+
+@media (min-width:550px) and (max-width:825px){
+  .review .card {
+    height: 250px;
+  }
+
+  .review .card img {
+    height: 250px;
+    width: 200px;
+
+  }
+
+  .review .card h2 {
+    font-size: 18px;
+    margin-top: 0px;
+
+  }
+
+  .review .card h4 {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+
+  .review .card .rating h4 {
+    font-size: 18px;
+  }
+
+  .review.card .starlogo{
+    height: 20px;
+  }
+
+ 
+}
+
+
