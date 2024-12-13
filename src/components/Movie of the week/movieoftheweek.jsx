@@ -23,17 +23,21 @@ export default function Movieoftheweek() {
 
   const movieData = [
     {
+      year: 2024,                
+      genre: "Action Thriller",  
+      type: "R",          
+      duration: "2hr 18m",
       movieName: "Joker: Folie à Deux",
       language: "English",
       poster: "https://img5.bdbphotos.com/images/orig/p/p/pp1iry1jdncacn1.jpg?skj2io4l",
-      trailerLink: "https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x",
-      ottPlatform: "https://www.hotstar.com/",
-      ottDate: "14 Nov 2024",
-      rating: "6.5",
       plot: "Struggling with his dual identity, failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while incarcerated at Arkham State Hospital.",
       director: "Todd Phillips",
       writers: ["Todd Phillips", "Scott Silver", "Bob Kane"],
-      stars: ["Joaquin Phoenix", "Lady Gaga"]
+      stars: ["Joaquin Phoenix", "Lady Gaga"],
+      trailerLink: "https://youtu.be/_OKAwz2MsJs?si=KknWW__--rNE143x",
+      ottPlatform: "https://www.hotstar.com/",
+      ottDate: "14 Nov 2024",
+      rating: "6.5"
     }
   ];
 
@@ -60,7 +64,7 @@ export default function Movieoftheweek() {
             <div className="row">
               <img className="poster col-md-4 col-12 h-lg-100 h-100" src={movie.poster} alt="Movie Poster" />
               <div className="ms-md-4 info position-relative col-md-6 col-12">
-                <p style={{ fontSize: "19px" }} className="mt-3 mt-md-0">2024 • Action Thriller • R • 2hr 18m </p>
+                <p style={{ fontSize: "19px" }} className="mt-3 mt-md-0">{movie.year} • {movie.genre} • {movie.type} • {movie.duration} </p>
                 <hr />
                 <h3>Plot: {movie.plot}</h3>
                 <hr />

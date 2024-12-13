@@ -2,6 +2,7 @@
   height: 1050px;
 }
 
+
 .homebg {
   background: url(../Images/homebg.jpg);
   backdrop-filter: blur(0px);
@@ -26,12 +27,15 @@
 .carousel-item {
   height: 450px;
   border-radius: 50px;
+
 }
 
 .carousel-item img {
   height: 450px;
   background-size: cover;
   border-radius: 50px;
+
+
 }
 
 .account {
@@ -56,12 +60,13 @@
   background-size: 100%;
   background-repeat: no-repeat;
   padding-left: 430px;
+  overflow-x:hidden ;
 }
 
 
 .intro .ticket {
   display: grid;
-  padding-top: 15px;
+  padding-top: 5px;
   height: 500px;
 }
 
@@ -74,10 +79,11 @@
 
 .menulist {
   position: absolute;
-  top: 873px;
-  padding-left: 260px;
-  font-size: 25px;
+  top: 860px;
+  padding-left: 250px;
+  font-size: 27px;
   list-style: none;
+  overflow-x: hidden;
 }
 
 .intro a {
@@ -87,18 +93,73 @@
   text-transform: uppercase;
 }
 
+.intro ul{
+  width: fit-content;
+}
+
 .intro li:hover {
   transform: scale(1.1);
   transition: 1s;
 }
 
-@media (min-width:500px) and (max-width:900px) {
+
+@media(min-width:1250px){
+  .intro {
+    padding-left: 500px;
+  }
+
+  .sideimg{
+    left:0px;
+    width: 700px;
+  }
+}
+
+@media (min-width:800px) and (max-width:920px){
+  .menulist {
+    top: 840px;
+    padding-left: 185px;
+    font-size: 30px;
+    width: 250px;
+    list-style: none;
+  }
+
+  
+  .intro {
+    padding-left: 300px;
+  }
+
+}
+
+
+@media (min-width:550px) and (max-width:800px){
+  .menulist {
+    top: 840px;
+    padding-left: 165px;
+    font-size: 27px;
+    width: 250px;
+    list-style: none;
+  }
+
+  
+  .intro {
+    padding-left: 300px;
+  }
+
+}
+
+
+@media (min-width:430px) and (max-width:550px){
+  .home {
+    height: 620px;
+  }
+
+
   .carousel-item {
-    height: 300px;
+    height: 250px;
   }
 
   .carousel-item img {
-    height: 300px;
+    height: 250px;
     border-radius: 0px;
   }
 
@@ -120,15 +181,55 @@
 
   .divider .line {
     position: absolute;
-    top: 480px;
+    top: 440px;
     width: 100%;
-    height: 120px;
+    height: 80px;
+  }
+
+
+  .intro .ticket {
+    display: grid;
+    height: 270px;
+    width: 365px;
+  }
+
+  .sideimg {
+    position: absolute;
+    height: 250px;
+    top: 475px;
+    left:-30px;
+    z-index: 0;
+  }
+
+  .intro {
+    background: linear-gradient(to bottom, white, #fbf2a1);
+    height: 270px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-left: 180px;
+    z-index: 20;
+  }
+
+  .menulist {
+    position: absolute;
+    top: 560px;
+    padding-left: 95px;
+    font-size: 14px;
+    width: 250px;
+    list-style: none;
+  }
+
+  .intro a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
   }
 
 }
 
 
-@media (max-width:500px) {
+@media  (max-width:430px) {
   .home {
     height: 620px;
   }
@@ -169,32 +270,37 @@
 
   .intro .ticket {
     display: grid;
-    padding-top:0px;
     height: 270px;
-    width: 300px;
+    width: 415px;
+
+ 
   }
 
   .sideimg {
     position: absolute;
-    height: 250px;
-    top: 455px;
-    left: -10px;
+    height: 270px;
+    top: 445px;
+    right: 20px;
+    z-index: 0;
   }
+
+
 
   .intro {
     background: linear-gradient(to bottom, white, #fbf2a1);
     height: 270px;
     background-size: 100%;
     background-repeat: no-repeat;
-    padding-left: 180px;
+    padding-left: 110px;
+    z-index: 20;
   }
 
   .menulist {
     position: absolute;
-    top: 530px;
-    padding-left: 50px;
+    top: 525px;
+    padding-left: 90px;
     font-size: 14px;
-    width: 300px;
+    width: 250px;
     list-style: none;
   }
 
