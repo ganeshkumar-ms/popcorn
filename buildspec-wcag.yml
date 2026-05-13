@@ -4,7 +4,7 @@ env:
   variables:
     A3_CHECKER_URL: "http://a3checkr-env.eba-3mt4ctvn.ap-southeast-2.elasticbeanstalk.com"
     TARGET_URL: "https://example.com"
-    REPORT_BUCKET: "your-report-bucket-name"
+    REPORT_BUCKET: "3a-checkr"
 
 phases:
   install:
