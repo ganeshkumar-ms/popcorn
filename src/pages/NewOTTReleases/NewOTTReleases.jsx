@@ -3,11 +3,11 @@
 
 import React, { useState } from 'react';
 import { BsBookmarkHeartFill } from "react-icons/bs";
-import NewOTTsvg from '../svg/newOTTsvg';
-import { Footer } from '../Footer/Footer';
-import './newOTTs.css';
+import NewOTTsvg from '../../components/illustrations/newOTTsvg';
+import { Footer } from '../../components/layout/Footer/Footer';
+import './NewOTTReleases.css';
 
-const NewOTTs = () => {
+const NewOTTReleases = () => {
   
   const movies = [
     {
@@ -116,4 +116,4 @@ const NewOTTs = () => {
   );
 };
 
-export default NewOTTs;
+export default NewOTTReleases;

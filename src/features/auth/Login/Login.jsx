@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react'
 import './Login.css'
-import { Footer } from '../Footer/Footer'
+import { Footer } from '../../../components/layout/Footer/Footer'
 import { RiUserHeartFill } from "react-icons/ri";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { RiLoginCircleFill } from "react-icons/ri";

@@ -2,22 +2,26 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 18
     commands:
-      - echo "Install phase started"
+      - npm ci
 
   pre_build:
     commands:
-      - echo "Pre-build phase started"
+      - echo "Running tests..."
+      - CI=true npm test -- --watchAll=false --passWithNoTests
 
   build:
     commands:
-      - echo "Build phase started"
-      - echo "Preparing application artifact"
+      - echo "Building React app..."
+      - npm run build
 
   post_build:
     commands:
-      - echo "Build completed successfully"
+      - echo "Build completed. Artifact is in build/"
 
 artifacts:
   files:
     - '**/*'
+  base-directory: build

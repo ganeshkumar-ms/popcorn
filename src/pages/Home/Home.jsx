@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import './Home.css';
-import { Footer } from '../Footer/Footer';
+import { Footer } from '../../components/layout/Footer/Footer';
 import { FaUserCircle } from 'react-icons/fa';
 import { MdNewReleases, MdOutlineFiberNew, MdRateReview } from 'react-icons/md';
 import { HiTrophy } from 'react-icons/hi2';
@@ -67,13 +67,13 @@ const Home = () => {
         </div>
 
         <div className='divider'>
-          <img src={require("../Images/line.png")} className='line' alt="" />
+          <img src={require("../../assets/images/line.png")} className='line' alt="" />
         </div>
         <div className='w-100 sec2'>
-          <img src={require("../Images/sideimg.png")} className='sideimg' alt="" />
+          <img src={require("../../assets/images/sideimg.png")} className='sideimg' alt="" />
 
           <div className='intro'>
-            <img src={require("../Images/ticket.png")} className='ticket' alt="" />
+            <img src={require("../../assets/images/ticket.png")} className='ticket' alt="" />
             <ul className='menulist'>
               <li><a href="/reviews"><MdRateReview className='me-2 my-2 ' />Reviews </a></li>
               <li><a href="/newOTTs"><MdOutlineFiberNew className='me-2 my-2 ' />New OTT Releases</a></li>

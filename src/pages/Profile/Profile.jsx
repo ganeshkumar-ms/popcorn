@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaUserAlt, FaEnvelope, FaLock, FaEdit, FaEye, FaEyeSlash, FaHome } from 'react-icons/fa';
-import { Footer } from '../Footer/Footer';
+import { Footer } from '../../components/layout/Footer/Footer';
 import './Profile.css';
 import { Link } from 'react-router-dom';
 

@@ -1,10 +1,10 @@
 //movieoftheweek
 
 import React, { useState } from 'react';
-import './movieoftheweek.css';
+import './MovieOfTheWeek.css';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaRegCopy, FaStar } from 'react-icons/fa';
-import { Footer } from '../Footer/Footer';
+import { Footer } from '../../components/layout/Footer/Footer';
 import { FaShareAlt } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { BsBookmarkHeartFill } from 'react-icons/bs';
@@ -12,12 +12,12 @@ import { FacebookShareButton, TwitterShareButton, WhatsappShareButton } from 're
 import { FaXTwitter } from 'react-icons/fa6';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { ImWhatsapp } from 'react-icons/im';
-import Movieoftheweeksvg from '../svg/movieoftheweeksvg';
+import Movieoftheweeksvg from '../../components/illustrations/movieoftheweeksvg';
 
 
 const URLformat = (name) => name.split(' ').join('_');
 
-export default function Movieoftheweek() {
+export default function MovieOfTheWeek() {
   const wiki = "https://en.wikipedia.org/wiki/";
   const shareUrl = "https://popcorn-cine.netlify.app/movieoftheweek";
 

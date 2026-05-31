@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Forgetpw.css';
+import './ForgotPassword.css';
 import { RiLockPasswordFill, RiMailFill } from 'react-icons/ri';
-import { Footer } from '../Footer/Footer';  
+import { Footer } from '../../../components/layout/Footer/Footer';  
 import { Link } from 'react-router-dom';
 
 const ForgetPassword = () => {

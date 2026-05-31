@@ -1,5 +1,5 @@
 .abt{
-  background: url(../Images/about.jpeg);
+  background: url(../../assets/images/about.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -22,7 +22,7 @@
 @media(max-width:690px){
   .abt{
     position: absolute;
-    background: url(../Images/about\ responsive.jpeg);
+    background: url(../../assets/images/about\ responsive.jpeg);
   }
 
 

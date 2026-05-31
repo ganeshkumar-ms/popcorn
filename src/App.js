@@ -1,18 +1,18 @@
 import React from 'react'
 import './App.css'
-import Navbar from './components/Navbar/navbar'
+import Navbar from './components/layout/Navbar/Navbar'
 import { Routes, Route } from 'react-router-dom'
-import Login from './components/Home/Login'
-import { Reviews } from './components/Reviews/Reviews'
-import About from './components/About/About'
-import Signup from './components/Home/Signup'
-import Forgetpw from './components/Home/Forgetpw'
-import Home from './components/Home/Home'
-import Exclusive from './components/Exclusive/Exclusive'
-import Profile from './components/ProfileDashboard/Profile'
-import Movieoftheweek from './components/Movie of the week/movieoftheweek'
-import NewOTTs from './components/New OTT Releases/newOTTs'
-import Admin from './Admin/Admin'
+import Login from './features/auth/Login/Login'
+import { Reviews } from './pages/Reviews/Reviews'
+import About from './pages/About/About'
+import Signup from './features/auth/Signup/Signup'
+import ForgotPassword from './features/auth/ForgotPassword/ForgotPassword'
+import Home from './pages/Home/Home'
+import Exclusive from './pages/Exclusive/Exclusive'
+import Profile from './pages/Profile/Profile'
+import MovieOfTheWeek from './pages/MovieOfTheWeek/MovieOfTheWeek'
+import NewOTTReleases from './pages/NewOTTReleases/NewOTTReleases'
+import Admin from './pages/Admin/Admin'
 
 function App() {
   return (
@@ -26,10 +26,10 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
-            <Route path='/forgetpassword' element={<Forgetpw />} />
-            <Route path='/movieoftheweek' element={<Movieoftheweek />} />
+            <Route path='/forgetpassword' element={<ForgotPassword />} />
+            <Route path='/movieoftheweek' element={<MovieOfTheWeek />} />
             <Route path='/exclusive' element={<Exclusive />} />
-            <Route path='/newOTTs' element={<NewOTTs />} />
+            <Route path='/newOTTs' element={<NewOTTReleases />} />
             <Route path='/reviews' element={<Reviews />} />
             <Route path='/about' element={<About />} />
             <Route path='/profile' element={<Profile />} />

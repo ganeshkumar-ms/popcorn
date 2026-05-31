@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Reviews.css';
-import { Footer } from '../Footer/Footer';
+import { Footer } from '../../components/layout/Footer/Footer';
 import { BsBookmarkHeartFill } from 'react-icons/bs';
 import { FaStar } from 'react-icons/fa';
-import Reviewssvg from '../svg/reviewssvg';
+import Reviewssvg from '../../components/illustrations/reviewssvg';
 
 const ReviewsData = [
   {

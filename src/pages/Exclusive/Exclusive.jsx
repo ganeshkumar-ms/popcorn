@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Footer } from '../Footer/Footer';
-import Exclusivesvg from '../svg/exclusivesvg';
+import { Footer } from '../../components/layout/Footer/Footer';
+import Exclusivesvg from '../../components/illustrations/exclusivesvg';
 import './Exclusive.css';
 
 const Exclusive = () => {

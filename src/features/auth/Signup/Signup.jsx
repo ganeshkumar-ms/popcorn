@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Signup.css";
 import { RiUserHeartFill, RiLockPasswordFill } from 'react-icons/ri';
-import { Footer } from '../Footer/Footer';
+import { Footer } from '../../../components/layout/Footer/Footer';
 import { SiGnuprivacyguard } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import { MdAlternateEmail } from 'react-icons/md';

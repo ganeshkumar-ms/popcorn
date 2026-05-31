@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import "./navbar.css"
+import "./Navbar.css"
 import { Offcanvas } from 'react-bootstrap';
-import Navbarsvg from '../svg/navbarsvg';
+import Navbarsvg from '../../illustrations/navbarsvg';
 import { FaSortAmountDown } from 'react-icons/fa';
 import { CgMenuLeft } from 'react-icons/cg';
 import { IoIosArrowDropdownCircle } from 'react-icons/io';

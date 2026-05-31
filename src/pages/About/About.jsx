@@ -2,13 +2,13 @@
 //About
 
 import React from 'react'
-import { Footer } from '../Footer/Footer'
+import { Footer } from '../../components/layout/Footer/Footer'
 import './About.css'
 import { IoIosMail } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { FaLinkedinIn } from 'react-icons/fa';
-import Aboutsvg from '../svg/aboutsvg';
+import Aboutsvg from '../../components/illustrations/aboutsvg';
 
 const links={
   linkedin:"https://www.linkedin.com/in/ganeshkumar-ms",
