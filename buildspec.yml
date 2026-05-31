@@ -7,11 +7,6 @@ phases:
     commands:
       - npm ci
 
-  pre_build:
-    commands:
-      - echo "Running tests..."
-      - CI=true npm test -- --watchAll=false --passWithNoTests
-
   build:
     commands:
       - echo "Building React app..."

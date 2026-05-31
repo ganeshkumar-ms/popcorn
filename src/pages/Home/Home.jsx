@@ -4,6 +4,9 @@ import { Footer } from '../../components/layout/Footer/Footer';
 import { FaUserCircle } from 'react-icons/fa';
 import { MdNewReleases, MdOutlineFiberNew, MdRateReview } from 'react-icons/md';
 import { HiTrophy } from 'react-icons/hi2';
+import lineImg from '../../assets/images/line.png';
+import sideImg from '../../assets/images/sideimg.png';
+import ticketImg from '../../assets/images/ticket.png';
 
 const Home = () => {
   const welcomeMessages = useMemo(() => [
@@ -67,13 +70,13 @@ const Home = () => {
         </div>
 
         <div className='divider'>
-          <img src={require("../../assets/images/line.png")} className='line' alt="" />
+          <img src={lineImg} className='line' alt="" />
         </div>
         <div className='w-100 sec2'>
-          <img src={require("../../assets/images/sideimg.png")} className='sideimg' alt="" />
+          <img src={sideImg} className='sideimg' alt="" />
 
           <div className='intro'>
-            <img src={require("../../assets/images/ticket.png")} className='ticket' alt="" />
+            <img src={ticketImg} className='ticket' alt="" />
             <ul className='menulist'>
               <li><a href="/reviews"><MdRateReview className='me-2 my-2 ' />Reviews </a></li>
               <li><a href="/newOTTs"><MdOutlineFiberNew className='me-2 my-2 ' />New OTT Releases</a></li>
